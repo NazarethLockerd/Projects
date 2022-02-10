@@ -1,0 +1,11 @@
+CREATE TABLE product_rating (
+brand VARCHAR(25),
+star VARCHAR(50),
+ratings INT NOT NULL
+);
+
+
+INSERT INTO product_rating (brand, star, ratings)
+VALUES ('Nike', '4', 12567),
+('Reebok', '4', 11345),
+('Adidas', '5', 5901);

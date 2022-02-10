@@ -1,0 +1,29 @@
+CREATE TABLE product_details (
+id INT PRIMARY KEY AUTO_INCREMENT,
+package_dimensions VARCHAR(50),
+model_number INT NOT NULL,
+department VARCHAR(25),
+first_available VARCHAR(50),
+manufacturer VARCHAR(50),
+selling_rank INT,
+productID INT,
+FOREIGN KEY(productID) REFERENCES products(productID)
+);
+
+INSERT INTO product_details (package_dimensions, model_number, department, first_available, manufacturer, selling_rank, productID)
+VALUES ('12.87 x 10.5 x 5.84 inches', 5678901, 'Mens', 'April 12 2019','Adidas', 2, 1),
+
+('10.87 x 15.5 x 6.84 inches', 2456789, 'Womens', 'April 17 2019','Adidas', 41, 3),
+
+('11.87 x 14.5 x 7.84 inches', 0001234, 'Mens', 'October 12 2019','Adidas', 11, 4),
+
+('12.84 x 13.5 x 8.84 inches', 4315678, 'Womens', 'January 12 2019','Nike', 69, 6),
+
+('13.85 x 12.5 x 4.84 inches', 1111123, 'Mens', 'March 14 2019','Nike', 21, 10),
+
+('14.21 x 12.5 x 6.64 inches', 7865431, 'Mens', 'March 14 2019','Nike', 35, 14),
+
+('14.21 x 12.5 x 6.64 inches', 7865431, 'Mens', 'March 14 2019','Nike', 35, 21),
+
+('15.61 x 11.5 x 5.45 inches', 6145678, 'Mens', 'August 12 2019', 'Reebok', 12, 19);
+
